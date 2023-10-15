@@ -25,6 +25,7 @@ public class UserModel {
 
 
     // @Column(name = "usuarios") //aqui posso renomear o nome da entidade no banco
+    @Column(unique = true)
     private String username;
     private String name;
     private String password;
