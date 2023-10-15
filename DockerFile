@@ -16,6 +16,7 @@ EXPOSE 8080
 
 COPY --from=build /target/todolist-1.0.0.jar app.jar
 
+#Dockerfile
 
 # //aqui é o run da aplicacao
 ENTRYPOINT [   "java", "-jar", "app.jar" ]
